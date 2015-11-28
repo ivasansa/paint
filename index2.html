@@ -3,28 +3,30 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paint</title>
-    <script src="paint.js"></script>
+    <title>Paint2</title>
+    <script src="paint2.js"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<canvas id="canvas" width="150" height="150"></canvas>
+<div id="sketch">
+	<canvas id="paint"></canvas>
+</div>
 <button id="pinzell" onclick='inici("P")'>Pinzell</button>
 <button id="rectangle" onclick='inici("R")'>Rectangle</button>
 <button id="cercle" onclick="cercle">Cercle</button>
 
 
 <select name="gruix" onchange="gruix(this)">
-<option value="1">Canvia Gruix</option>
+<option >Canvia Gruix</option>
   <option value="1">1px</option>
   <option value="3">3px</option>
   <option value="6">6px</option>
-  <option value="10">10px</option>
+  <option value="6">10px</option>
 </select>
 
 <select name="pot" onchange="pot(this)">
-<option value="transparent">Pot de Pintura</option>
+    <option>Pot de Pintura</option>
 <option value="transparent">Sense Ompliment</option>
   <option value="#FF0000">Vermell</option>
   <option value="#0000FF">Blau</option>
@@ -34,7 +36,6 @@
 
 <select name="color" onchange="color(this)">
 <option >Canvia Color</option>
-<option value="#000000">Negre</option>
   <option value="#FF0000">Vermell</option>
   <option value="#0000FF">Blau</option>
   <option value="#FFFF00">Groc</option>
@@ -42,9 +43,9 @@
 </select>
 
 <select name="tipus" onchange="tipus(this)">
-<option  value="0">Canvia Tipus</option>
-  <option value="7">Guions</option>
-  <option value="3">Punts</option>
+<option >Canvia Tipus</option>
+  <option value="1">Guions</option>
+  <option value="2">Punts</option>
 </select>
 
 <button id="bw" onclick='bw()'>Canviar a B/N</button>
