@@ -2,3 +2,6 @@ canvas { border: 1px solid black; }
 button, select {
     display: block;
 }
+img {
+ border: 1px solid black;
+}
